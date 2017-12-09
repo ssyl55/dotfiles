@@ -1,0 +1,11 @@
+# IMAP settings
+set imap_user = 'stliu.webservices@gmail.com'
+set folder = 'imaps://imap.gmail.com:993'
+set spoolfile = '+INBOX'
+set postponed = '+[Gmail]/Drafts'
+
+# SMTP settings
+set smtp_url = 'smtp://stliu.webservices@smtp.gmail.com:587/'
+set from = 'stliu.webservices@gmail.com'
+set realname = 'Stephen Liu'
+set smtp_authenticators = 'gssapi:login'

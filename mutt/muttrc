@@ -1,7 +1,7 @@
 # Hotkeys for different accounts
-macro index,pager <F1> '<sync-mailbox><enter-command>source ~/.mutt/accounts/case<enter><change-folder>!<enter>'
-macro index,pager <F2> '<sync-mailbox><enter-command>source ~/.mutt/accounts/steuyve<enter><change-folder>!<enter>'
-macro index,pager <F3> '<sync-mailbox><enter-command>source ~/.mutt/accounts/stliu<enter><change-folder>!<enter>'
+macro index,pager <F1> '<sync-mailbox><enter-command>source ~/dotfiles/mutt/accounts/case<enter><change-folder>!<enter>'
+macro index,pager <F2> '<sync-mailbox><enter-command>source ~/dotfiles/mutt/accounts/steuyve<enter><change-folder>!<enter>'
+macro index,pager <F3> '<sync-mailbox><enter-command>source ~/dotfiles/mutt/accounts/stliu<enter><change-folder>!<enter>'
 
 # Connection settings
 set ssl_starttls = yes
@@ -28,12 +28,12 @@ set sort = reverse-threads
 set sort_aux = date-received
 
 # Folder hooks to different accounts
-folder-hook 'case' 'source ~/.mutt/accounts/case'
-folder-hook 'steuyve' 'source ~/.mutt/accounts/steuyve'
-folder-hook 'stliu' 'source ~/.mutt/accounts/stliu'
+folder-hook 'case' 'source ~/dotfiles/mutt/accounts/case'
+folder-hook 'steuyve' 'source ~/dotfiles/mutt/accounts/steuyve'
+folder-hook 'stliu' 'source ~/dotfiles/mutt/accounts/stliu'
 
 # On startup, access case account
-source ~/.mutt/accounts/case
+source ~/dotfiles/mutt/accounts/case
 
 # Pager settings
 set pager_context = 3	# number of context lines to show
