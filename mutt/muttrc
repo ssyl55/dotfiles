@@ -17,7 +17,7 @@ set editor = 'vim'
 set edit_headers = yes
 set charset = UTF-8
 set send_charset = UTF-8
-set mailcap_path = ~/.mutt/mailcap
+set mailcap_path = ~/dotfiles/mutt/mailcap
 
 # Connection settings
 unset imap_passive
