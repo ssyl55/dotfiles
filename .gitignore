@@ -1,0 +1,20 @@
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ethumbs.db
+Thumbs.db
+
+# Packages
+*.dmg
+*.iso
+*.jar
+*.tar
+*.rar
+*.zip
+
+# Build Artifacts
+*.o
+*.class
