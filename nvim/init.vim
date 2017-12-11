@@ -29,7 +29,7 @@ set background=dark
 let g:python3_host_prog = '/usr/local/bin/python3'
 
 " Airline configuration
-let g:airline_theme = 'solarized'
+let g:airline_theme = 'one'
 let g:airline_solarized_bg = 'dark'
 
 " vim-pandoc configuration
