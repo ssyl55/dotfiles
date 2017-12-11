@@ -1,0 +1,5 @@
+[user]
+	name = Stephen Liu
+	email = ssl76@case.edu
+[core]
+	editor = nvim
