@@ -12,6 +12,7 @@ filetype plugin indent on
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'iCyMind/NeoSolarized'
+Plug 'rakr/vim-one'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-pandoc/vim-pandoc'
@@ -21,14 +22,14 @@ call plug#end()
 
 " colorscheme
 set termguicolors
-colorscheme NeoSolarized
+colorscheme one
 set background=dark
 
 " python3 support
 let g:python3_host_prog = '/usr/local/bin/python3'
 
 " Airline configuration
-let g:airline_theme = 'solarized'
+let g:airline_theme = 'one'
 let g:airline_solarized_bg = 'dark'
 
 " vim-pandoc configuration
