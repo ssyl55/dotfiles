@@ -1,45 +1,23 @@
-" defaults
+set statusline=[%n]\ %f\ %=\ %m%r%w%h%y\ [%l/%L,%c]\ %p%%\ %{strftime('%H:%M')}
+
+" Tabbing
+autocmd Filetype c		setlocal tabstop=8 shiftwidth=8 noexpandtab
+autocmd Filetype javascript	setlocal tabstop=4 shiftwidth=4 expandtab
+autocmd Filetype markdown	setlocal tabstop=4 shiftwidth=4 expandtab spell spelllang=en_us
+
+let g:markdown_folding=1
+
 set number
-set autoindent
-set incsearch
-set hlsearch
-set ruler
 set cursorline
-syntax on
-filetype plugin indent on
 
-" vim-plug configuration
-call plug#begin('~/.local/share/nvim/plugged')
+set ignorecase
+set smartcase
 
-Plug 'iCyMind/NeoSolarized'
-Plug 'rakr/vim-one'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'vim-pandoc/vim-pandoc'
-Plug 'vim-pandoc/vim-pandoc-syntax'
+set path+=**
+set wildmenu
 
-call plug#end()
+command! Tags !ctags -R .
 
-" colorscheme
+" Color Scheme
 set termguicolors
-colorscheme one
-set background=dark
-
-" python3 support
-let g:python3_host_prog = '/usr/local/bin/python3'
-
-" Airline configuration
-let g:airline_theme = 'one'
-let g:airline_solarized_bg = 'dark'
-
-" vim-pandoc configuration
-let g:pandoc#filetypes#handled = ["pandoc", "markdown"]
-let g:pandoc#filetypes#pandoc_markdown = 1
-" let g:pandoc#modules#disabled = ["folding"]
-
-func! WritingMode()
-	setlocal textwidth=120
-	setlocal wrapmargin=0
-	setlocal formatoptions+=t
-endfu
-com! WM call WritingMode()
+colorscheme molokai
