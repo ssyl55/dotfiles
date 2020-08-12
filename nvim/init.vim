@@ -21,11 +21,3 @@ command! Tags !ctags -R .
 " Color Scheme
 set termguicolors
 colorscheme molokai
-
-" vim-plug
-call plug#begin('~/.config/nvim/plugged')
-
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-let g:deoplete#enable_at_startup=1
-
-call plug#end()
