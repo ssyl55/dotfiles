@@ -19,6 +19,27 @@ set wildmenu
 
 command! Tags !ctags -R .
 
+set foldmethod=syntax
+set foldnestmax=1
+
 " Color Scheme
 set termguicolors
+set background=dark
 colorscheme molokai
+
+call plug#begin('~/.config/nvim/plugged')
+
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+call plug#end()
+
+runtime coc.vim
+
+" transparent background
+highlight Normal guibg=NONE ctermbg=NONE
+highlight CursorColumn cterm=NONE ctermbg=NONE ctermfg=NONE
+highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE
+highlight CursorLineNr cterm=NONE ctermbg=NONE ctermfg=NONE
+highlight clear LineNr
+highlight clear SignColumn
+highlight clear StatusLine
