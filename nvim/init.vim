@@ -24,7 +24,7 @@ set foldnestmax=1
 
 " Color Scheme
 set termguicolors
-set background=light
+set background=dark
 colorscheme molokai
 
 call plug#begin('~/.config/nvim/plugged')
